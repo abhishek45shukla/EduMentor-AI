@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink font-body antialiased;
+}
+
+h1, h2, h3, h4 {
+  @apply font-display;
+}
+
+/* Glassmorphism card used across dashboard, tutor, quiz pages */
+.glass-card {
+  @apply bg-white/70 backdrop-blur-xl border border-white/60 shadow-glass rounded-xl2;
+}
+
+.solid-card {
+  @apply bg-white border border-slate-100 shadow-card rounded-xl2;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-edu-blue px-6 py-3
+    font-display font-semibold text-white shadow-md transition-all duration-200
+    hover:bg-edu-blue-deep hover:shadow-lg active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-edu-blue px-6 py-3
+    font-display font-semibold text-edu-blue transition-all duration-200
+    hover:bg-edu-blue-soft active:scale-[0.98];
+}
+
+.btn-accent {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-edu-green px-6 py-3
+    font-display font-semibold text-white shadow-md transition-all duration-200
+    hover:brightness-95 active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
+}
+
+.input-field {
+  @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-ink placeholder:text-slate-400
+    outline-none transition focus:border-edu-blue focus:ring-2 focus:ring-edu-blue/20;
+}
+
+/* Custom scrollbar for chat windows */
+.chat-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(33, 81, 214, 0.25);
+  border-radius: 999px;
+}
