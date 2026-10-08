@@ -15,7 +15,7 @@ recommends what to study next — instead of behaving like a generic chatbot.
 | Frontend | React (Vite), Tailwind CSS, React Router, Axios, Framer Motion, Lucide Icons |
 | Backend | Node.js, Express.js |
 | Database | MongoDB Atlas + Mongoose |
-| AI | Google Gemini API (`gemini-1.5-flash`) |
+| AI | Google Gemini API (`gemini-3.5-flash`) |
 | Auth | JWT + bcrypt |
 
 ---
